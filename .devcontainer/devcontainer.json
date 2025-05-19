@@ -1,0 +1,15 @@
+{
+    "image": "mcr.microsoft.com/devcontainers/rust:latest",
+    "postCreateCommand": "cargo install --locked typst-cli typstyle",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.makefile-tools",
+                "ltex-plus.vscode-ltex-plus",
+                "myriad-dreamin.tinymist",
+                "dnut.rewrap-revived",
+                "editorconfig.editorconfig"
+            ]
+        }
+    }
+}
