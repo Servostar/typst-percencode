@@ -25,6 +25,7 @@
   /// -> str | regex
   exclude: none,
 ) = {
+  let str_pad(s) = if s.len() < 2 { "0" + s } else { s }
   return message
     .clusters()
     .map(cluster => {
@@ -34,7 +35,7 @@
         // Convert grapheme cluster to bytes representing the unicode point.
         // Then drop zero bytes, only the least significant non-zero bytes are of use.
         // At last, convert each byte to uppercase hex and prepend a '%'.
-        array(bytes(cluster)).map(byte => "%" + upper(str(byte, base: 16))).join("")
+        array(bytes(cluster)).map(byte => "%" + str_pad(upper(str(byte, base: 16)))).join("")
       }
     })
     .join()
