@@ -8,14 +8,14 @@ This Typst library offers function for encoding and decoding percent escape sequ
 These are typically used to encode unsafe or non-ASCII characters in URLs.
 Supported by this library is only Typst's native character encoding and defacto web standard: UTF-8.
 
-Read the [manual](https://github.com/Servostar/typst-percencode/releases/download/v0.1.0/manual.pdf) for further information.
+Read the [manual](https://github.com/Servostar/typst-percencode/releases/download/v0.1.1/manual.pdf) for further information.
 
 ## Usage
 
 You can directly import the package from Typst universe:
 
 ```typst
-#import "@preview/percencode:0.1.0": *
+#import "@preview/percencode:0.1.1": *
 ```
 
 ## Example
